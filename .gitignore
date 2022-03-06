@@ -1,0 +1,11 @@
+# Python Bytecode
+__pycache__
+
+# Token files
+*token.txt
+
+# Log files
+*.log
+
+# Virtual environment folder
+env
