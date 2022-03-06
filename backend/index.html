@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta content="Home" about="/content/home" property="dc:title" />
+<link rel="canonical" href="/content/home" />
+
+<link rel="shortlink" href="/node/1" />
+  <title>Home | iCatCard</title>
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://icatcard.ucmerced.edu/css/inception/smoothness-1.8.13/jquery-ui-1.8.13.custom.css">
+    <link rel="stylesheet" type="text/css" href="https://icatcard.ucmerced.edu/css/inception/ui.dropdownchecklist.themeroller.css">
+  
+
+    <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/ui.dropdownchecklist.js"></script>
+
+    <!-- Use a JQuery ThemeRoller theme, in this case 'smoothness' 
+    <link rel="stylesheet" type="text/css" href="https://icatcard.ucmerced.edu/css/inception/smoothness-1.8.13/jquery-ui-1.8.13.custom.css">
+    <link rel="stylesheet" type="text/css" href="https://icatcard.ucmerced.edu/css/inception/ui.dropdownchecklist.themeroller.css">
+  -->
+    <!-- Include the basic JQuery support (core and ui) -->
+        <!-- 
+
+    <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/ui.dropdownchecklist.js"></script>
+    -->
+    <!--
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  -->
+  
+    <!-- For Google Charts -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    
+
+  <link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css1.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css2.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css3.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css5.css" media="print" />
+
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css6.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css7.css" media="all" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="https://icatcard.ucmerced.edu/css/inception/css8.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:700,regular|Droid+Serif:700,700italic,italic,regular,bold&amp;subset=latin" media="all" />
+  
+
+    <!-- Apply dropdown check list to the selected items  -->
+	<script>
+function focusMe()
+{
+var x=document.getElementById("proxid");
+x.focus();
+}
+</script>
+	
+    <script type="text/javascript">
+    
+    function isNumberKey(evt)
+       {
+          var charCode = (evt.which) ? evt.which : event.keyCode;
+          if (charCode != 46 && charCode > 31 
+            && (charCode < 48 || charCode > 57))
+             return false;
+
+          return true;
+       }
+       
+       
+	var isMobile = {
+	    Android: function() {
+	        return navigator.userAgent.match(/Android/i);
+	    },
+	    BlackBerry: function() {
+	        return navigator.userAgent.match(/BlackBerry/i);
+	    },
+	    iOS: function() {
+	        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	    },
+	    Opera: function() {
+	        return navigator.userAgent.match(/Opera Mini/i);
+	    },
+	    Windows: function() {
+	        return navigator.userAgent.match(/IEMobile/i);
+	    },
+	    any: function() {
+	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	    }
+	};
+	
+
+    </script>
+        
+    <script type="text/javascript">
+	$(document).ready(function() {
+	    
+	    var track_click = 0; //track user click on "load more" button, righ now it is 0 click
+
+	    var total_pages = 27;
+	    
+	    var hs = 0;
+
+                            var sort = "start_date desc";
+            	    
+	    $('#results').load("?", {'past-sort': sort, 'page':track_click, 'hideshow':hs, 'first':1}, function() {track_click++;}); //initial data to load
+		
+	    if(total_pages == 0){
+		$(".load_more").attr("disabled", "disabled");
+		$(".load_more").attr("value", "No Past Events");
+		$(".load_more").attr("class", "big btn load_more");
+	    }
+
+	    $(".load_more").click(function (e) { //user clicks on button
+
+		$(this).hide(); //hide load more button on click
+		$('.animation_image').show(); //show loading image
+
+		if(track_click <= total_pages) //user click number is still less than total pages
+		{
+		    
+		    //post page number and load returned data into result element
+			var pastsort = 'start_date desc'
+		    $.post('?',{'past-sort': pastsort, 'page': track_click, 'hideshow':hs}, function(data) {
+
+			$(".load_more").show(); //bring back load more button
+			
+			$("#results").children("tbody").append(data); //append data received from server
+
+			//scroll page smoothly to button id
+			$("html, body").animate({scrollTop: $("#load_more_button").offset().top}, 500);
+
+			//hide loading image
+			$('.animation_image').hide(); //hide loading image once data is received
+
+			track_click++; //user click increment on load button
+
+		    }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
+			alert('ERROR: ' + thrownError); //alert with HTTP error
+			$(".load_more").show(); //bring back load more button
+			$('.animation_image').hide(); //hide loading image once data is received
+		    });
+
+
+		    if(track_click >= total_pages-1) //compare user click with page number
+		    {
+			//reached end of the page yet? disable load button
+			$(".load_more").attr("disabled", "disabled");
+			$(".load_more").attr("value", "No More Past Events");
+			$(".load_more").attr("class", "big btn load_more");
+		    }
+
+		 }
+
+		});
+	});
+    </script>
+    
+    <script>
+	    $(document).keypress(function(event) {
+		
+		switch(event.which)
+		    {
+		    case 32:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus')){
+			    event.preventDefault();
+			    valueS();
+			}
+			break;
+		    case 48:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value0();
+			break;
+		    case 49:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value1();
+			break;
+		    case 50:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value2();
+			break;
+		    case 51:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value3();
+			break;
+		    case 52:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value4();
+			break;
+		    case 53:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value5();
+			break;
+		    case 54:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value6();
+			break;
+		    case 55:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value7();
+			break;
+		    case 56:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value8();
+			break;
+		    case 57:
+			if(!$('input').is(':focus') && !$('textarea').is(':focus'))
+			    value9();
+			break;
+		    
+		    //default:
+			 //alert('Handler for .keypress() called. - ' + event.charCode);
+		    }
+
+	    });
+	    function value1(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "1";    
+	    }
+	    function value2(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "2";
+		 
+	    }
+	    function value3(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "3";
+		    
+	    }
+	    function value4(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "4";    
+	    }
+	    function value5(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "5";
+		    
+	    }
+	    function value6(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "6"; 
+	    }
+	    function value7(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "7";   
+	    }
+	    function value8(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "8"; 
+	    }
+	    function value9(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "9";   
+	    }
+	    function value0(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + "0";
+		     
+	    }
+	    function valueS(){
+		var value = parseInt(document.getElementById('proxid').value, 10);
+		value = isNaN(value) ? "" : value;
+		document.getElementById('proxid').value = "" + value + " ";
+		$('#proxid').trigger("change");
+	    }
+	   
+	   
+//$(document).on('click', '#status', function(){
+//    alert("HI");
+//});
+
+	    
+	    </script>
+    
+    
+    
+<script language="JavaScript" type="text/javascript">
+    
+$(document).ready(function(e){
+
+   
+    $('input[id=proxid]').focus(
+    function(){
+        $(this).css({'background-color' : 'lightgreen'});
+    });
+    
+    $('input[id=proxid]').blur(
+    function(){
+        $(this).css({'background-color' : '#F66'});
+    });
+    //$('input[class=noteoption]').change(function() {
+	//alert('Value change to ' + $(this).attr('value'));
+    //});
+    $('#proxid').bind('change keyup input', function(ev) {
+		 //if (this.value.match(/[^0-9\s]/g)) {
+        // replace it with nothing
+        //this.value = this.value.replace(/[^0-9\s]/g, '');
+    	//}
+        //if($(this).val().length==7){
+        if(/\s/.test($(this).val())){
+			this.value = this.value.replace(/[\s]/g, '');
+			if(this.value.length>0)
+				ajax_post();
+            $('input[id=proxid]').val('');
+        }
+        
+    });
+    
+    $('#catcardid').bind('click', function(ev) {
+		 var valuer = $('input[id=proxid]').val();
+		 
+		 if (valuer.match(/[^0-9\s]/g)) {
+		 
+        // replace it with nothing
+        valuer = valuer.replace(/[^0-9\s]/g, '');
+    	}
+        //if($(this).val().length==7){
+        //if(/\s/.test($(this).val())){
+	valuer = valuer.replace(/[\s]/g, '');
+			//if(this.value.length>0)
+			if(valuer !== '')
+				ajax_post2();
+	    //$('input[id=catcardid]').val(valuer);
+			    
+            $('input[id=proxid]').val('');
+        //}
+        
+    });
+    
+    $('#ucmnetid').bind('click', function(ev) {
+		 var valuer = $('input[id=proxid]').val();
+		 
+        //if($(this).val().length==7){
+        //if(/\s/.test($(this).val())){
+	valuer = valuer.replace(/[\s]/g, '');
+			//if(this.value.length>0)
+			if(valuer !== '')
+				ajax_post3();
+	    //$('input[id=catcardid]').val(valuer);
+			    
+            $('input[id=proxid]').val('');
+        //}
+        
+    });
+    
+
+});
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
+    });
+}
+
+// Usage:
+
+preload([
+    '../images/load.gif'
+]);
+
+function ajax_post(){
+    // Create our XMLHttpRequest object
+    var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+    var url = "index.php";
+    var prox = document.getElementById("proxid").value;
+    var pid = document.getElementById("pid").value;
+    var vars = "proxid="+prox+"&action=track&pid="+pid;
+    hr.open("POST", url, true);
+    // Set content type header information for sending url encoded variables in the request
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var return_data = hr.responseText;
+			document.getElementById("status").innerHTML = return_data;
+	    }
+    }
+    
+    // Send the data to PHP now... and wait for response to update the status div
+    hr.send(vars); // Actually execute the request
+    document.getElementById("status").innerHTML = "<center><img height=\"175\" width=\"175\" src=\"../images/load.gif\" alt=\"processing...\"></center>";
+}
+
+
+function ajax_post2(){
+    // Create our XMLHttpRequest object
+    var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+    var url = "index.php";
+    var prox = document.getElementById("proxid").value;
+    var pid = document.getElementById("pid").value;
+    var vars = "proxid="+prox+"&action=track&catid=1&pid="+pid;
+    hr.open("POST", url, true);
+    // Set content type header information for sending url encoded variables in the request
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var return_data = hr.responseText;
+			document.getElementById("status").innerHTML = return_data;
+	    }
+    }
+    // Send the data to PHP now... and wait for response to update the status div
+    hr.send(vars); // Actually execute the request
+    document.getElementById("status").innerHTML = "<center><img height=\"175\" width=\"175\" src=\"../images/load.gif\" alt=\"processing...\"></center>";
+}
+
+function ajax_post3(){
+    // Create our XMLHttpRequest object
+    var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+    var url = "index.php";
+    var prox = document.getElementById("proxid").value;
+    var pid = document.getElementById("pid").value;
+    var vars = "proxid="+prox+"&action=track&netid=1&pid="+pid;
+    hr.open("POST", url, true);
+    // Set content type header information for sending url encoded variables in the request
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var return_data = hr.responseText;
+			document.getElementById("status").innerHTML = return_data;
+	    }
+    }
+    // Send the data to PHP now... and wait for response to update the status div
+    hr.send(vars); // Actually execute the request
+    document.getElementById("status").innerHTML = "<center><img height=\"175\" width=\"175\" src=\"../images/load.gif\" alt=\"processing...\"></center>";
+}
+
+function ajax_post4(){
+    // Create our XMLHttpRequest object
+    var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+    var url = "index.php";
+    var note = document.getElementById("noteoption").value;
+    var pid = document.getElementById("pid").value;
+    var vars = "note_name="+note+"&action=sub_note&pid="+pid;
+    hr.open("POST", url, true);
+    // Set content type header information for sending url encoded variables in the request
+    hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // Access the onreadystatechange event for the XMLHttpRequest object
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var return_data = hr.responseText;
+			document.getElementById("sub").innerHTML = return_data;
+	    }
+    }
+    // Send the data to PHP now... and wait for response to update the status div
+    hr.send(vars); // Actually execute the request
+    document.getElementById("sub").innerHTML = "processing...";
+}
+
+</script>
+
+
+<!--
+  <script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/js1.js"></script>
+<script type="text/javascript" src="https://icatcard.ucmerced.edu/css/inception/js2.js"></script>
+-->
+
+
+</head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page default-theme" >
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47772488-1', 'ucmerced.edu');
+  ga('send', 'pageview');
+
+</script>    <!-- <div style="width: 100%; background-color: lightgreen; text-align: center;">
+	Email functionality has been upgraded!<br/>Contact icatcard@ucmerced.edu for questions or concerns. Thanks for understanding,  Arian Faurtosh (Lead programmer)
+    </div> -->
+    <div id="skip-link">
+	<a href="#main-menu" class="element-invisible element-focusable">Jump to Navigation</a>
+    </div>
+    <div id="page-wrapper">
+	<div id="page">
+	    <div id="header">
+            	<div class="section clearfix">
+		    <a href="http://www.ucmerced.edu" rel="home" id="logo"><img src="/css/inception/images/logo.png" alt="Home" /></a>
+                    <span class="ucmerced-logo"></span>
+                    
+                    		    
+			<table border="0" style="width:auto;" align="right">
+			    <tr>
+				<td valign="bottom" style="border-bottom:0px solid black;">
+				    <img style="-mox-border-radius: 8px; border-radius: 8px;" src="../images/nopic.jpg" width="45" height="45" />				</td>
+				<td style="border-bottom:0px solid black;"><p align="right"> ucm Association for Computing Machinery<br />
+				    <a href="?logout=" style="color:#fbcb09;" onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#fbcb09'">Log Out</a></p>
+				</td>
+			    </tr>
+                     	</table>
+                                            
+                    <div id="name-and-slogan">
+			<div id="site-name">
+			    <a href="/" title="Home" rel="home"><span><font size="+5">iCatCard</font></span></a>
+			</div>
+			<div id="site-slogan">
+			</div>
+                    </div><!-- /#name-and-slogan -->
+		</div>
+	    </div><!-- /.section, /#header -->
+	    
+	    <div id="navigation">
+		<div class="region region-navigation">
+		    <div id="block-superfish-1" class="block block-superfish first last odd block-count-1">
+			<h2 class="block-title">Main menu</h2>
+			
+			<div class="content"><ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-none sf-total-items-5 sf-parent-items-4 sf-single-items-1"></ul></div>
+		    </div><!-- /.block -->
+		</div><!-- /.region -->
+	    </div><!--/navigation -->
+	    
+	    <div id="main-wrapper">
+		
+		<a href="?"><h2 style="color:white; position:absolute; text-align: center; width: 100%; padding-top:5px; font-size:2em;"  onMouseOver="this.style.color='#fbcb09'" onMouseOut="this.style.color='white'">Catcard iCheck-in</h2></a>
+                
+            	<div id="main" class="clearfix with-navigation">
+                    <div id="content" class="column">
+                    	<div class="section">
+			    <div class="region region-content">
+				<div id="block-system-main" class="block block-system first last odd block-count-1">
+				    <div class="content">	
+
+	<h1 class="title">
+		<font size="+3">Create Event</font> <a style="float: right; font-size: 14px; margin-bottom: 0px; margin-top: 10px;" href="?" class="btn big danger">Go Back</a>
+	</h1>
+
+	<div class="breadcrumb">
+		<h2 class="element-invisible">You are here</h2><a href="?">Home</a> › Create Event
+	</div>
+	
+				<div style="background: #93DB70; width: 700px;margin-bottom: 12px;padding: 5px 8px;border: 1px solid #071B36;border-radius: 3px; margin-left: auto; margin-right: auto;">
+					<font size="+1">You have successfully created your event <b>newdsw</b> at <b>asdfasfd</b> from <b>2:00&nbsp;AM Mar 6, 2022</b> till <b>4:00&nbsp;AM&nbsp;Mar 6, 2022</b>. </font>
+
+					<br /><br />
+					<div style="text-align: center;">
+						<form method="post" style=" display: inline;">
+							<input type="submit" class="btn big success" name="email" value="Finish" style="font-size: 2em;" />
+						</form>
+
+						<form method="post" style=" display: inline;">
+							<input type="hidden" name="action" value="create" />
+							<input type="submit" class="btn big info" name="attendees" style="font-size: 2em;" value="Create another event" />
+						</form>
+
+						<form method="post" style=" display: inline;">
+							<input type="hidden" name="action" value="track" />
+							<input type="hidden" name="pid" value="13344" />
+							<input type="hidden" name="eventname" value="newdsw" />
+							<input type="submit" class="btn big success" style="font-size: 2em;" name="track" value="Track Now" />
+						</form>
+					</div>
+				</div>
+					    </div><!-- /.content -->
+			</div><!-- /.block -->
+		    </div><!-- /.region -->
+                        </div>
+                    </div><!-- /.section, /#content -->
+				
+                    <div id="navigation">
+                        <div class="region region-navigation">
+                            <div id="block-superfish-1" class="block block-superfish first last odd block-count-1">
+    
+                                <h2 class="block-title">Main menu</h2>
+        
+                                <div class="content"></div>
+     
+                            </div><!-- /.block -->
+                        </div><!-- /.region -->
+                    </div><!--/navigation -->
+				</div>
+     		</div><!-- /#main, /#main-wrapper -->
+
+ 			<div id="footer">
+    			<div class="row">
+      				<div class="region region-footer">
+						<div id="block-ucm-footer-blocks-bottom-required-links" class="block block-ucm-footer-blocks odd block-count-0">
+							<h2 class="block-title">Resources</h2>
+							<div class="content">
+    							<div class="footer-required-links">
+    								<ul class="menu">
+                                    	<li><a href="http://www.ucmerced.edu/site-list">Site List</a></li>
+                                    	<li><a href="http://directory.ucmerced.edu/">Directory</a></li>
+                                   		<li><a href="http://www.ucmerced.edu/about-uc-merced">About UC Merced</a></li>
+    								</ul>
+  								</div><!-- /footer-required-links -->
+    						</div>
+						</div><!-- /.block -->
+						
+                        <div class="region region-footer-menus">
+    						<div id="block-block-9" class="block block-block first last odd block-count-1 ">
+                            	<h2 class="block-title">Connect with Us</h2>
+                            	<div id="block-menu-menu-right-footer" class="content">
+                                	<ul class="menu">
+                                    	<li class="facebook"><a href="http://www.facebook.com/UCMCatCard" target="_blank">Facebook</a></li>
+                                        <li class="twitter"><a href="http://www.twitter.com/UCMCatCard" target="_blank">Twitter</a></li>
+                                    </ul>
+                            	</div>
+							</div><!-- /.block -->
+  						</div><!-- /.region -->
+					<div class="region region-footer-menus">
+    						<div id="block-block-9" class="block block-block first last odd block-count-1 ">
+                            	<h2 class="block-title">Tutorials</h2>
+                            	<div id="block-menu-menu-right-footer" class="content">
+                                	<ul class="menu">
+					    <li><a href="tutorial" target="_new">Create Event</a></li>
+					    
+                                    </ul>
+                            	</div>
+							</div><!-- /.block -->
+  						</div><!-- /.region -->
+						  	  
+        				<div id="block-ucm-footer-blocks-brand" class="block block-ucm-footer-blocks first odd block-count-0">
+							<div class="content">
+    							<div class="footer-brand">
+      								<a class="footer-brand-logo" style="border-bottom: none;" href="http://www.ucmerced.edu">UC Merced</a>
+      								<p>The first new American research university in the 21<sup>st</sup> century, with a mission of research, teaching and service.</p>
+    							</div><!-- /footer-brand -->
+    						</div>
+						</div><!-- /.block -->
+					</div><!-- /region-footer -->
+    			</div>
+    			
+                <div class="row">
+      				<div class="region region-footer-message">
+        				<div id="block-ucm-footer-blocks-bottom-info" class="block block-ucm-footer-blocks even block-count-0">
+							<div class="content">
+    							<div class="footer-info">
+				    			<p><a href="http://www.ucmerced.edu">University of California, Merced</a> 5200 North Lake Rd. Merced, CA 95343 T: (209) 228-4400 | <a href="http://www.ucmerced.edu/directions-map">Directions</a> <span class="right">&copy; 2013 <a href="http://www.universityofcalifornia.edu/regents/">UC Regents</a> | <a href="http://www.ucmerced.edu/privacy-statement">Privacy/Legal</a> | <a href="http://icatcard.ucmerced.edu/flyspray/?do=newtask&project=6" target="_blank">Error Reporting</a></span></p>
+  								</div><!-- /footer-info -->
+    						</div>
+						</div><!-- /.block -->
+      				</div><!-- /region-footer-message -->
+   		 		</div>
+  			</div><!-- /footer -->
+		</div>
+	</div><!-- /#page, /#page-wrapper -->    <!-- the_end-->
+</body>
+</html>

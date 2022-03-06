@@ -9,3 +9,8 @@ __pycache__
 
 # Virtual environment folder
 env
+
+# test.py
+
+# db files
+*.db
