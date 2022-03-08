@@ -53,7 +53,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/token")
 
-async def create_user(studentID, password):
+async def registerAttendee(studentID, password):
     newAttendee = ''
     async with sessionmaker.begin() as session:
         user = session.get(Attendee, studentID)
@@ -66,7 +66,7 @@ async def create_user(studentID, password):
         session.add(newAttendee)
     return newAttendee
 
-async def create_user(clubID, password):
+async def registerClub(clubID, password):
     newAttendee = ''
     async with sessionmaker.begin() as session:
         user = session.get(ClubAccount, clubID)
