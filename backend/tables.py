@@ -31,14 +31,33 @@ class Codes:
 
 @mapper.mapped
 @dataclass
-class Auth:
+class Attendee:
     __tablename__ = 'auth'
 
     __sa_dataclass_metadata_key__ = 'sa'
 
-    username: str = field(metadata={
+    studentID: str = field(metadata={
         'sa': Column(String, primary_key=True)
     })
     password: str = field(metadata={
         'sa': Column(String, primary_key=True)
     })
+    points: int = field(metadata={
+        'sa': Column(Integer, primary_key=False)
+    })
+    hashed_password = Column(String, nullable=False)
+
+@mapper.mapped
+@dataclass
+class ClubAccount:
+    __tablename__ = 'auth'
+
+    __sa_dataclass_metadata_key__ = 'sa'
+
+    clubID: str = field(metadata={
+        'sa': Column(String, primary_key=True)
+    })
+    password: str = field(metadata={
+        'sa': Column(String, primary_key=True)
+    })
+    hashed_password = Column(String, nullable=False)
