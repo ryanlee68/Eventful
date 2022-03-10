@@ -31,8 +31,22 @@ class Codes:
 
 @mapper.mapped
 @dataclass
-class Auth:
-    __tablename__ = 'auth'
+class Attendees:
+    __tablename__ = 'attendees'
+
+    __sa_dataclass_metadata_key__ = 'sa'
+
+    username: str = field(metadata={
+        'sa': Column(String, primary_key=True)
+    })
+    password: str = field(metadata={
+        'sa': Column(String, primary_key=True)
+    })
+
+@mapper.mapped
+@dataclass
+class ClubOwner:
+    __tablename__ = 'clubowner'
 
     __sa_dataclass_metadata_key__ = 'sa'
 
