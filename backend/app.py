@@ -2,7 +2,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker as maker
 from tables import Attendance, Codes, mapper
 from fastapi import FastAPI, Depends, HTTPException
-from test import make_event
+# from test import make_event
 
 import asyncio
 import aiohttp
@@ -129,6 +129,7 @@ async def get_clubs():
         file = await request.json()
     names = [i['name'] for i in file]
     print(names)
+    return
 
 @app.post("/get-code")
 async def get_code(studentID:str, password:str):
