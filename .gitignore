@@ -14,7 +14,3 @@ env
 
 # db files
 *.db
-
-uvicorn
-
-PyJWT

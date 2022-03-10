@@ -3,3 +3,7 @@ sqlalchemy>=1.4.3
 fastapi
 
 aiohttp
+
+PyJWT
+
+bcrypt
