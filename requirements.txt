@@ -4,6 +4,14 @@ fastapi
 
 aiohttp
 
+aiosqlite
+
 PyJWT
 
 bcrypt
+
+uvicorn
+
+passlib=1.7.4
+
+greenlet
