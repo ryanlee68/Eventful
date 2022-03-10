@@ -10,7 +10,11 @@ __pycache__
 # Virtual environment folder
 env
 
-# test.py
+*test.py
 
 # db files
 *.db
+
+uvicorn
+
+PyJWT
