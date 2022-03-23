@@ -4,7 +4,42 @@ import aiohttp
 import asyncio
 import multidict
 
+from functools import cache
 
+@cache
+async def add_cookies(cookies):
+    pass
+
+@cache
+async def get_auth_cookies(club_user, password):
+    # gets club_username and password and returns cookies needed and saves it to cache
+    payload = {
+    'j_username': user,
+    'j_password': password,
+    'shib_idp_revokeConsent': True,
+    '_eventId_proceed': '',
+    }
+
+    async with aiohttp.ClientSession() as client:
+        async with client.get('https://icatcard.ucmerced.edu/attendance') as resp:
+            pass
+            # print(f"{await resp.text()=!s}")
+            # print(f"{resp.cookies=}")
+            # print(f"{resp.url=}")
+        # for cookie in client.cookie_jar:
+        #     print(f"{cookie.key=} {cookie.value=}")
+        
+        async with client.post('https://shib.ucmerced.edu/idp/profile/cas/login?execution=e1s1', data=payload) as resp:
+            print(f"{await resp.text()=!s}")
+
+        return client.cookie_jar
+    
+async def attend_event(club_user, club_password, event_name, attendee_user):
+    # registers attendees to event
+    async with aiohttp.ClientSession() as client:
+        async with client.get('https://icatcard.ucmerced.edu/attendance') as resp:
+            pass
+    return None
 
 async def make_event(user, password, event_name, event_location, start_hour, start_minute, start_ampm, end_hour, end_minute, end_ampm, start_date, end_date):
     payload = {
@@ -67,8 +102,11 @@ async def make_event(user, password, event_name, event_location, start_hour, sta
             with open('index.html', 'w') as file:
                 file.write(await resp.text())
 
-# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-# asyncio.run(make_event("acm", "password"))
+    
+
+asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+asyncio.run(make_event("acm", "", "testing event", "location", '7', '00', 'PM', '8', '00', 'PM', '2022-03-22', '2022-03-22'))
+# acm, password: !
 
 
 # url = 'http://127.0.0.1:8000/get-clubs'
